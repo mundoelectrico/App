@@ -1,0 +1,393 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.Fondo {
+  background-image: url('Imagenes/Fondo\ Pagina.jpg');
+  background-size: cover; 
+  background-position: center;
+  
+}
+
+.ColumnaCanalizacion {
+  max-width: 50%;
+}
+
+.ContenedorTuberiaSelec {
+  margin-top: 50px;
+}
+
+.contenedornav {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+
+/* Barra de navegación */
+.navbar {
+  background-color:black;
+  height: 90px;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  width: 30%;
+}
+
+.Imagenlogo {
+  height: 25%;
+  width:  25%;
+}
+
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list li {
+  margin: 0 15px;
+}
+
+.nav-list li a {
+  text-decoration: none;
+  padding: 10px;
+  transition: 0.3s;
+}
+
+.nav-list li a:hover {
+  background-color: #555;
+}
+
+
+
+.mobile-nav-list {
+  visibility: hidden;
+}
+
+
+/* Menú hamburguesa */
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 768px) {
+
+  .logo {
+    width: 100%;
+  }
+
+  .Columna {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .mobile-menu {
+    display: none;
+    background-color: #333;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+  }
+
+  .mobile-nav-list {
+    visibility: visible;
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .mobile-nav-list li {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #555;
+  }
+
+  .mobile-nav-list li a {
+    color: darkgoldenrod;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+  }
+
+  .ContenedorColumnas {
+    flex-wrap: wrap;  
+  }
+
+  .ColumnaCanalizacion {
+    max-width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .IconRedes {
+    height: 10%;
+    width:  10%;
+  }
+
+  .Publicidad {
+    max-height: 200px;
+    max-width: 500px;
+  }
+
+  .Columna1 {
+    margin-bottom: 20px;
+   }
+
+  .Columna2 {
+   margin-top: 50px;
+  }
+
+  .TablaCorriente {
+    max-width: 200px; 
+  }
+
+
+   .TablasTubos {
+    width: 95%;
+   }
+
+   .TablaImpedancia {
+    width: 98%;
+   }
+  
+}
+
+
+ 
+.Titulo{
+  margin-top: 1%;
+   height: 1%;
+   color: black;
+ }
+
+.ContenedorColumnas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Columna1 {
+  padding-right: 100px;
+  padding-left:  100px;
+  padding-bottom: 20px;
+}
+
+.Columna2 {
+  padding-right: 100px;
+  padding-left:  100px;
+  padding-bottom: 20px;
+}
+
+.table-borderless{
+  border-style: solid;
+  border-width: 5px;
+}
+
+.lienzo{
+  width:  100px;
+  height: 100px;
+}
+
+.ImagenTabla{
+  width: 50%;
+  height: 50%;
+}
+
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar ul li {
+  float: left;
+}
+
+.navbar ul li a {
+  display: block;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar ul li a {
+  color: white;
+}
+
+
+
+/* Estilos para los menús desplegables */
+.navbar ul ul {
+  display: none;
+  position: absolute;
+  background-color: darkgrey;
+
+  
+}
+
+.navbar ul li:hover > ul {
+  display: inherit;
+}
+
+.navbar ul ul li {
+  float: none;
+  position: relative;
+}
+
+
+.navbar ul ul li a {
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar ul ul li a:hover {
+  background-color: #555;
+}
+
+
+.EnlaceVideo {
+  color: black;
+}
+
+
+/* Estilos del pie de página */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+.redes-sociales {
+  margin-top: 10px;
+}
+
+.boton-social {
+  display: inline-block;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.boton-social:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Estilos adicionales opcionales */
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.IconRedes {
+  height: 4%;
+  width:   4%;
+}
+
+.IconRedesPop {
+  height: 10%;
+  width:   10%;
+}
+
+.redes-sociales a {
+  margin-right:8px;
+  margin-left: 8px;
+
+}
+
+.Publicidad {
+  height: 300px;
+  width: 300px;
+}
+
+.ColumnaTemperatura {
+  height: 300px;
+  width: 300px;
+}
+
+
+
+/* Estilo para el fondo del popup */
+.popup {
+  display: none; /* Ocultar el popup por defecto */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilo para el contenido del popup */
+.popup-content {
+  background-color: lightgray;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 500px;
+  position: relative;
+}
+
+/* Estilo para el botón de cerrar */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Estilo para el botón de abrir el popup */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
